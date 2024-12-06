@@ -25,7 +25,7 @@ public class ChatWebSocketHandler extends TextWebSocketHandler {
         System.out.println("Received Message: " + message.getPayload());
 
         // Broadcast message to all clients\
-        if (message.getPayload().equals("clear")) {
+        if (message.getPayload().equals("KILL ALL")) {
 
         } else {
             for (WebSocketSession s : sessions) {
